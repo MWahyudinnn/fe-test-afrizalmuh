@@ -1,7 +1,7 @@
 import React from 'react'
 import accountLogo from '../asset/account-logo.jpg'
 
-import sideDashboard from '../asset/side-dashboard.jpg'
+// import sideDashboard from '../asset/side-dashboard.jpg'
 
 const Header = () => {
   return (
