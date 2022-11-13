@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import loginLogo from '../asset/login-page.jpg'
+// import loginLogo from '../asset/login-page.jpg'
 import ReCAPTCHA from "react-google-recaptcha";
 import googleLogo from '../asset/google-logo.jpg'
 import facebookLogo from '../asset/facebook-logo.jpg'
@@ -11,7 +11,7 @@ const Login = () => {
 
   const navigateLogin = useNavigate();
 
-  const [login, setLogin] = useState({
+  const [login] = useState({
     email: '',
     password: ''
   })
@@ -23,7 +23,7 @@ const Login = () => {
     const newLogin = { ...login }
     newLogin[e.target.name] = e.target.value
     console.log(newLogin)
-    //setLogin(newLogin)
+//     setLogin(newLogin)
   }
   return (
     <div className='grid grid-cols-2 font-spacegrotesk text-blue-1'>
